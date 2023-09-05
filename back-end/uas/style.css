@@ -1,0 +1,77 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #B3CEE5; /* Set body background color */
+    color: #333;
+}
+
+.container {
+    margin-bottom: 70px;
+}
+
+.container h1 {
+    font-weight: 600;
+    font-size: xxx-large;
+    font-family: 'paletino linotype';
+    color: #333; /* Set heading text color */
+}
+
+/* submit button */
+.btn {
+    color: #FFF; /* Set button text color to white */
+    font-weight: 500;
+    background-color: #1976D2; /* Set button background color */
+    border: none;
+}
+
+.btn:hover {
+    background-color: #1565C0; /* Adjust button color on hover */
+}
+
+/* edit delete button */
+.td_button {
+    text-align: center;
+}
+
+.btn_edit, .btn_delete {
+    color: #FFF; /* Set button text color to white */
+    background-color: #1976D2; /* Set button background color */
+    border: solid 2px white;
+    margin-right: 10px;
+}
+
+.btn_edit:hover, .btn_delete:hover {
+    background-color: #1565C0; /* Adjust button color on hover */
+    border: solid 2px #FFF; /* Adjust border color on hover */
+}
+
+/* form */
+.form-label, .form-input, .form-check-label, option {
+    font-size: 19px;
+    font-family: 'Brandon Grotesque';
+    color: #333; /* Set form element text color */
+}
+
+/* jurusan table */
+.jurusan, .mahasiswa {
+    /* margin-right: 15%;
+    margin-left: 15%; */
+    align-items: center;
+    background-color: white; /* Set table background color */
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
