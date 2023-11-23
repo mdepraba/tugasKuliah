@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Log</title>
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Dashboard</title>
+    <link rel="icon" href="../assets/logo_only.png" />
+</head>
+<body> 
+    <nav class="sidenavbar closed">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../assets/logo_only.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">PLAYGROUND ASSISTANT</span>
+                    <span class="profession">Your Partner in Play, Fun, and Safety</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-linked">
+                        <a href="dashboard.html">
+                            <i class='bx bxs-dashboard icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-linked">
+                        <a href="employee.html">
+                            <i class='bx bxs-user icon' ></i>
+                            <span class="text nav-text">Employee</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-linked">
+                        <a href="visitor.html">
+                            <i class='bx bxs-id-card icon'></i>
+                            <span class="text nav-text">Visitor</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-linked active">
+                        <a href="section_log.html">
+                            <i class='bx bxs-receipt icon' ></i>
+                            <span class="text nav-text">Section Log</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-linked">
+                        <a href="feedback.html">
+                            <i class='bx bxs-comment-error icon' ></i>
+                            <span class="text nav-text">Feedback</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="../login.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>         
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="content section_log">
+        <!-- <h1>This Page is Under Develop</h1> -->
+        <div class="dataTables_wrapper">
+            <table id="table" class="display nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Datetime</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Place</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023-11-01 08:30:00</td>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>In</td>
+                        <td>Section 1</td>
+                    </tr>
+                    <tr>
+                        <td>2023-11-01 09:00:00</td>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>Out</td>
+                        <td>Section 2</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 09:30:00</td>
+                        <td>3</td>
+                        <td>Bob Johnson</td>
+                        <td>In</td>
+                        <td>Section 3</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 10:00:00</td>
+                        <td>4</td>
+                        <td>Emily Davis</td>
+                        <td>Out</td>
+                        <td>Section 1</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 10:30:00</td>
+                        <td>5</td>
+                        <td>Chris Wilson</td>
+                        <td>In</td>
+                        <td>Section 4</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 11:00:00</td>
+                        <td>6</td>
+                        <td>David Miller</td>
+                        <td>Out</td>
+                        <td>Section 2</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 11:30:00</td>
+                        <td>7</td>
+                        <td>Megan Brown</td>
+                        <td>In</td>
+                        <td>Section 3</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 12:00:00</td>
+                        <td>8</td>
+                        <td>Sarah Taylor</td>
+                        <td>Out</td>
+                        <td>Section 1</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 12:30:00</td>
+                        <td>9</td>
+                        <td>Kevin Adams</td>
+                        <td>In</td>
+                        <td>Section 4</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 13:00:00</td>
+                        <td>10</td>
+                        <td>Amy Wilson</td>
+                        <td>Out</td>
+                        <td>Section 2</td>
+                    </tr>
+                        <tr>
+                        <td>2023-11-01 14:00:00</td>
+                        <td>17</td>
+                        <td>Aaron White</td>
+                        <td>Out</td>
+                        <td>Section 3</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 14:30:00</td>
+                        <td>11</td>
+                        <td>Justin Lee</td>
+                        <td>In</td>
+                        <td>Section 4</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 15:00:00</td>
+                        <td>24</td>
+                        <td>Sophia Wilson</td>
+                        <td>Out</td>
+                        <td>Section 2</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 15:30:00</td>
+                        <td>29</td>
+                        <td>Alice Williams</td>
+                        <td>In</td>
+                        <td>Section 1</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 16:00:00</td>
+                        <td>15</td>
+                        <td>Samuel Clark</td>
+                        <td>Out</td>
+                        <td>Section 4</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 16:30:00</td>
+                        <td>18</td>
+                        <td>Brianna Adams</td>
+                        <td>In</td>
+                        <td>Section 3</td>
+                    </tr>
+                    <tr>
+                        <td>2023-11-01 17:00:00</td>
+                        <td>14</td>
+                        <td>Laura Turner</td>
+                        <td>Out</td>
+                        <td>Section 1</td>
+                    </tr>
+                    <tr>
+                        <td>2023-11-01 17:30:00</td>
+                        <td>19</td>
+                        <td>Isaac Moore</td>
+                        <td>In</td>
+                        <td>Section 2</td>
+                    </tr>
+                    <tr>
+                        <td>2023-11-01 18:00:00</td>
+                        <td>28</td>
+                        <td>Madison Harris</td>
+                        <td>Out</td>
+                        <td>Section 3</td>
+                    </tr>
+                    <tr>
+                        <td>2023-11-01 18:30:00</td>
+                        <td>12</td>
+                        <td>Emma Turner</td>
+                        <td>In</td>
+                        <td>Section 4</td>
+                    </tr>
+                    <tr>
+                        <td>2023-11-01 19:00:00</td>
+                        <td>22</td>
+                        <td>Grace Clark</td>
+                        <td>Out</td>
+                        <td>Section 1</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 19:30:00</td>
+                        <td>25</td>
+                        <td>Connor Adams</td>
+                        <td>In</td>
+                        <td>Section 2</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 20:00:00</td>
+                        <td>27</td>
+                        <td>Ethan Clark</td>
+                        <td>Out</td>
+                        <td>Section 3</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 20:30:00</td>
+                        <td>16</td>
+                        <td>Olivia Wilson</td>
+                        <td>In</td>
+                        <td>Section 4</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 21:00:00</td>
+                        <td>20</td>
+                        <td>Eva Anderson</td>
+                        <td>Out</td>
+                        <td>Section 1</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 21:30:00</td>
+                        <td>23</td>
+                        <td>Nolan Turner</td>
+                        <td>In</td>
+                        <td>Section 2</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 22:00:00</td>
+                        <td>26</td>
+                        <td>Hailey Turner</td>
+                        <td>Out</td>
+                        <td>Section 3</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 22:30:00</td>
+                        <td>29</td>
+                        <td>Alice Williams</td>
+                        <td>In</td>
+                        <td>Section 4</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 23:00:00</td>
+                        <td>13</td>
+                        <td>Nathan Harris</td>
+                        <td>Out</td>
+                        <td>Section 1</td>
+                    </tr>                   
+                    <tr>
+                        <td>2023-11-01 23:30:00</td>
+                        <td>30</td>
+                        <td>Michael Davis</td>
+                        <td>In</td>
+                        <td>Section 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

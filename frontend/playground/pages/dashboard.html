@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Dashboard</title>
+    <link rel="icon" href="../assets/logo_only.png" />
+</head>
+<body>
+    <nav class="sidenavbar closed">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../assets/logo_only.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">PLAYGROUND ASSISTANT</span>
+                    <span class="profession">Your Partner in Play, Fun, and Safety</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link active">
+                        <a href="dashboard.html">
+                            <i class='bx bxs-dashboard icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="employee.html">
+                            <i class='bx bxs-user icon' ></i>
+                            <span class="text nav-text">Employee</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="visitor.html">
+                            <i class='bx bxs-id-card icon'></i>
+                            <span class="text nav-text">Visitor</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="section_log.html">
+                            <i class='bx bxs-receipt icon' ></i>
+                            <span class="text nav-text">Section Log</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="feedback.html">
+                            <i class='bx bxs-comment-error icon' ></i>
+                            <span class="text nav-text">Feedback</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="../login.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>         
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="content dashboard">
+        <div class="set-employee">
+            <div class="text">Top Employee Performance</div>
+            <div class="employee">
+                <img src="../assets/top_employees.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

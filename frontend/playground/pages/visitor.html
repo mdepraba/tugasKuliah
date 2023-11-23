@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Visitor</title>
+    <link rel="icon" href="../assets/logo_only.png" />
+</head>
+<body> 
+    <nav class="sidenavbar closed">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../assets/logo_only.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">PLAYGROUND ASSISTANT</span>
+                    <span class="profession">Your Partner in Play, Fun, and Safety</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-linked">
+                        <a href="dashboard.html">
+                            <i class='bx bxs-dashboard icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-linked">
+                        <a href="employee.html">
+                            <i class='bx bxs-user icon' ></i>
+                            <span class="text nav-text">Employee</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-linked active">
+                        <a href="visitor.html">
+                            <i class='bx bxs-id-card icon'></i>
+                            <span class="text nav-text">Visitor</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-linked">
+                        <a href="section_log.html">
+                            <i class='bx bxs-receipt icon' ></i>
+                            <span class="text nav-text">Section Log</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-linked">
+                        <a href="feedback.html">
+                            <i class='bx bxs-comment-error icon' ></i>
+                            <span class="text nav-text">Feedback</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="../login.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>         
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="content visitor">
+        <!-- <h1>This Page is Under Develop</h1> -->
+        <div class="dataTables_wrapper">
+            <table id="table" class="display nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john.doe@example.com</td>
+                        <td>25</td>
+                        <td>555-1234</td>
+                        <td>123 Main St</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane.smith@example.com</td>
+                        <td>28</td>
+                        <td>555-5678</td>
+                        <td>456 Oak St</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bob Johnson</td>
+                        <td>bob.johnson@example.com</td>
+                        <td>32</td>
+                        <td>555-8765</td>
+                        <td>789 Pine St</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Emily Davis</td>
+                        <td>emily.davis@example.com</td>
+                        <td>27</td>
+                        <td>555-2345</td>
+                        <td>234 Birch St</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Chris Wilson</td>
+                        <td>chris.wilson@example.com</td>
+                        <td>29</td>
+                        <td>555-8765</td>
+                        <td>567 Maple St</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>David Miller</td>
+                        <td>david.miller@example.com</td>
+                        <td>31</td>
+                        <td>555-3456</td>
+                        <td>789 Pine St</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Megan Brown</td>
+                        <td>megan.brown@example.com</td>
+                        <td>26</td>
+                        <td>555-6543</td>
+                        <td>123 Oak St</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Sarah Taylor</td>
+                        <td>sarah.taylor@example.com</td>
+                        <td>29</td>
+                        <td>555-8765</td>
+                        <td>567 Maple St</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Kevin Adams</td>
+                        <td>kevin.adams@example.com</td>
+                        <td>33</td>
+                        <td>555-9876</td>
+                        <td>678 Pine St</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Amy Wilson</td>
+                        <td>amy.wilson@example.com</td>
+                        <td>28</td>
+                        <td>555-2345</td>
+                        <td>789 Oak St</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Justin Lee</td>
+                        <td>justin.lee@example.com</td>
+                        <td>30</td>
+                        <td>555-3456</td>
+                        <td>890 Birch St</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Emma Turner</td>
+                        <td>emma.turner@example.com</td>
+                        <td>27</td>
+                        <td>555-6543</td>
+                        <td>901 Cedar St</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Nathan Harris</td>
+                        <td>nathan.harris@example.com</td>
+                        <td>32</td>
+                        <td>555-8765</td>
+                        <td>345 Maple St</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Laura Turner</td>
+                        <td>laura.turner@example.com</td>
+                        <td>28</td>
+                        <td>555-2345</td>
+                        <td>456 Oak St</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Samuel Clark</td>
+                        <td>samuel.clark@example.com</td>
+                        <td>30</td>
+                        <td>555-3456</td>
+                        <td>567 Pine St</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Olivia Wilson</td>
+                        <td>olivia.wilson@example.com</td>
+                        <td>26</td>
+                        <td>555-6543</td>
+                        <td>678 Cedar St</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Aaron White</td>
+                        <td>aaron.white@example.com</td>
+                        <td>31</td>
+                        <td>555-9876</td>
+                        <td>789 Birch St</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Brianna Adams</td>
+                        <td>brianna.adams@example.com</td>
+                        <td>27</td>
+                        <td>555-4321</td>
+                        <td>890 Elm St</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Isaac Moore</td>
+                        <td>isaac.moore@example.com</td>
+                        <td>29</td>
+                        <td>555-8765</td>
+                        <td>234 Cedar St</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Eva Anderson</td>
+                        <td>eva.anderson@example.com</td>
+                        <td>33</td>
+                        <td>555-2345</td>
+                        <td>345 Pine St</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Liam Harris</td>
+                        <td>liam.harris@example.com</td>
+                        <td>28</td>
+                        <td>555-3456</td>
+                        <td>456 Oak St</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>Grace Clark</td>
+                        <td>grace.clark@example.com</td>
+                        <td>30</td>
+                        <td>555-6543</td>
+                        <td>567 Elm St</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Nolan Turner</td>
+                        <td>nolan.turner@example.com</td>
+                        <td>26</td>
+                        <td>555-9876</td>
+                        <td>678 Cedar St</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>Sophia Wilson</td>
+                        <td>sophia.wilson@example.com</td>
+                        <td>32</td>
+                        <td>555-8765</td>
+                        <td>789 Birch St</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>Connor Adams</td>
+                        <td>connor.adams@example.com</td>
+                        <td>28</td>
+                        <td>555-2345</td>
+                        <td>890 Pine St</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>Hailey Turner</td>
+                        <td>hailey.turner@example.com</td>
+                        <td>30</td>
+                        <td>555-3456</td>
+                        <td>901 Cedar St</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>Ethan Clark</td>
+                        <td>ethan.clark@example.com</td>
+                        <td>26</td>
+                        <td>555-6543</td>
+                        <td>234 Oak St</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>Madison Harris</td>
+                        <td>madison.harris@example.com</td>
+                        <td>31</td>
+                        <td>555-9876</td>
+                        <td>567 Birch St</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>Alice Williams</td>
+                        <td>alice.williams@example.com</td>
+                        <td>30</td>
+                        <td>555-4321</td>
+                        <td>321 Cedar St</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>Michael Davis</td>
+                        <td>michael.davis@example.com</td>
+                        <td>35</td>
+                        <td>555-9876</td>
+                        <td>654 Elm St</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

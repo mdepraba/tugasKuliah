@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,300;1,400;1,700&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    font-weight: light;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.container1 .left-content{
+    display: flex;
+    background-color: rgba(217, 217, 217, 0.3);
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.container1 .right-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.left-content .admin{
+    display: flex;
+    background-image: url('../assets/admin_back.jpg');
+    background-color: aqua;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24.8rem;
+    height: 16.53rem;
+    justify-content: center;
+    border-radius: 25%;
+}
+
+.left-content img{
+    width: 20rem;
+}
+.left-content .brand{
+    width: 15rem;
+}
+
+.right-content img{
+    width: 12rem;
+}
+
+.right-content input{
+    background-color: #F2E3C6;
+    border-style: none;
+    width: 20rem;
+}
+
+.right-content a{
+    text-decoration: none;
+}
+
+.right-content .btn{
+    display: flex;
+    border-radius: 17px;
+    background-color: #DB903B;
+    border-style: none;
+    margin-right: auto;
+    margin-left: auto;
+    width: 12rem;
+}
+
+.right-content .btn:hover{
+    background-color: #b47630;
+}
