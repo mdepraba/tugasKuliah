@@ -1,0 +1,169 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    color: var(--accent-color);
+}
+
+:root{
+    --main-color: #464E57;
+    --secondary-color: #21252A;
+    --accent-color: #DFE3E4; 
+
+    --gradient1: linear-gradient(135deg, rgba(33,37,42,1) 0%, rgba(73,76,82,1) 100%);;
+}
+
+html, body{
+    background-color: var(--main-color);
+    color: #DFE3E4;
+}
+
+/* ========== Navbar ========== */
+nav.navbar{
+    background: var(--main-color);
+    position: sticky;
+}
+
+.navbar ul.navbar-nav{
+    justify-content: center;
+    margin: auto;
+}
+
+.navbar li.nav-item{
+    margin: 0em 0.2em;
+    width: 7em;
+    border-radius: 0.5em;
+
+}
+
+.navbar a.nav-link{
+    color: var(--accent-color);
+    border-radius: 1vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar li.nav-item:hover{
+    background: var(--secondary-color);
+    color: white;
+    text-shadow:  8px 6px -6px white;
+}
+
+
+/* ======= Home ======= */
+.home .content{
+    /* background: var(--gradient1); */
+    align-items: center;
+    border-radius: 1.5em;
+}
+
+.home .content .text h1{
+    font-size: 4em;
+    font-weight: 400;
+    color: white;
+    /* background-color: #DFE3E4; */
+}
+.home .content .text h2 u{
+    font-size: 0.7em;
+    font-weight: 300;
+    color: white;
+    /* background-color: #464E57; */
+}
+
+.content img{
+    max-width: 20em;
+}
+/* ==================== */
+
+
+/* ======= About ======= */
+.about .container{
+    background: var(--gradient1);
+    align-items: center;
+    border-radius: 1.5em;
+}
+
+/* ==================== */
+
+
+/* ======= About ======= */
+.card {
+    background: var(--gradient1);
+    border: none;
+    box-shadow: -5px 0 black;
+}
+/* ==================== */
+
+
+/* ======= Projects ======= */
+/* ======================== */
+
+
+/* ======= Contact Me ======= */
+.contact{
+    height: 600px;
+    position: relative;
+}
+.social{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: text-bottom;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.contact .social::before{
+    content: "";
+    margin-top: 60px;
+    background-image: url(assets/contact_me.png);
+    /* background-image: -webkit-linear-gradient(top, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,0) 80%,
+        rgba(0,0,0,0.9) 100%
+      ),
+      url(assets/contact_me.png); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.social-item{
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: flex-end;
+    /* margin-bottom: 100px; */
+    justify-content: center;
+    /* margin: auto;
+    background-color: #DFE3E4; */
+}
+
+.social-media li{
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.social-media li a :where(i, span){
+    vertical-align: middle;
+    font-size: 3vh;
+}
+
+a{
+    text-decoration: none;
+}
+/* ========================== */
