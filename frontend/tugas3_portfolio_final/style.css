@@ -1,0 +1,301 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    color: var(--accent-color);
+}
+
+:root{
+    --main-color: #464E57;
+    --secondary-color: #21252A;
+    --accent-color: #DFE3E4; 
+
+    --gradient1: linear-gradient(135deg, rgba(33,37,42,1) 0%, rgba(73,76,82,1) 100%);;
+}
+
+html, body{
+    background-color: var(--main-color);
+    color: #DFE3E4;
+}
+
+/* ========== Navbar ========== */
+nav.navbar{
+    background: var(--main-color);
+    position: sticky;
+}
+
+.navbar ul.navbar-nav{
+    justify-content: center;
+    margin: auto;
+}
+
+.navbar li.nav-item{
+    margin: 0em 0.2em;
+    width: 7em;
+    border-radius: 0.5em;
+
+}
+
+.navbar a.nav-link{
+    color: var(--accent-color);
+    border-radius: 1vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar li.nav-item:hover{
+    background: var(--secondary-color);
+    color: white;
+    text-shadow:  8px 6px -6px white;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin: -80px 0 0;
+}
+/* ========================== */
+
+
+/* ======= Home ======= */
+.home {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: #000; */
+}
+.scrolled .home {
+    height: 100%;
+}
+.home .container{
+    display: flex;
+    align-items: center;
+    border-radius: 1.5em;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+}
+.scrolled .home .container {
+    transform: scale(0.8);
+    height: 100vh;
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+}
+.scrolled .container .content{
+    background: var(--gradient1);
+    height: 60vh;
+    border-radius: 1.5em;
+}
+.container .content img {
+    transition: opacity 0.5s ease-in-out;
+    max-width: 20em;
+    height: max-content;
+}
+.fade-out {
+    opacity: 0;
+}
+
+.home .content .text h1{
+    font-size: 4em;
+    font-weight: 400;
+    color: white;
+}
+.home .content .text h2 u{
+    font-size: 0.7em;
+    font-weight: 300;
+    color: white;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* ==================== */
+
+
+/* ======= About ======= */
+.about .container{
+    background: var(--gradient1);
+    align-items: center;
+    border-radius: 1.5em;
+}
+
+/* ==================== */
+
+
+/* ======= About ======= */
+.right table td{
+    background: none;
+    color: var(--accent-color);
+    border-bottom-style: none;
+}
+/* ==================== */
+
+
+/* ======= Projects ======= */
+.project .card {
+    background: var(--gradient1);
+    border: none;
+    box-shadow: -40px -40px 60px -20px rgba(0, 0, 0, 0.15);
+}
+.project .card a{
+    position: relative;
+    display: inline-block;
+}
+a .img-thumbnail{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+a .hover-content{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+a:hover .img-thumbnail{
+    opacity: 0.2;
+}
+a:hover .hover-content{
+    opacity: 1;
+}
+/* ======================== */
+
+
+/* ======= Contact Me ======= */
+.contact{
+    height: 600px;
+    position: relative;
+}
+.social{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: text-bottom;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.contact .social::before{
+    content: "";
+    margin-top: 60px;
+    background-image: url(assets/contact_me.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact .social-gradient::after{
+    display: block;
+    /* position: absolute; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 100%);
+    height: 500px;
+    width: 100%;
+    margin-bottom: -30px;
+    content: '';
+}
+
+.social-item{
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    width: 35vw;
+    /* background-color: #DFE3E4; */
+}
+
+.social-media{
+    margin-bottom: 0;
+    /* background-color: #000; */
+    padding-bottom: 10px;
+    margin-bottom: -1vw;
+}
+.social-media li{
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.social-media li a :where(i, span){
+    vertical-align: middle;
+    font-size: 1.8vw;
+}
+
+a{
+    text-decoration: none;
+}
+span#linkedin{
+    vertical-align: -8px;
+}
+
+@media (max-width: 600px) {
+    /* Adjust sizes for smaller screens */
+    .social-media li a i {
+        font-size: 2vh;
+    }
+
+    .social-media li a span {
+        font-size: 1vh;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Further adjust sizes for even smaller screens */
+    .social-media li a i {
+        font-size: 1.5vh;
+    }
+
+    .social-media li a span {
+        font-size: 0.8vh;
+    }
+}
+/* ========================== */
